@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <style>
+                body {
+    scroll-behavior: smooth;
+}
+
+body{
+ 
+    background-color: #212121;
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+}
+header {
+/* obligatoire pour overlay */
+  
+
+ background-color: black;
+  margin: 30px;
+  border-radius: 30px;
+  color: white;
+  overflow: hidden; /* empêche le texte de dépasser */
+
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative; /* pour être au-dessus de l'overlay */
+  z-index: 2;
+}
+
+main {
+
+
+    background-color: black;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 30px;
+
+
+
+
+}
+        nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    font-weight: 600;
+    
+}
+
+nav ul li:hover {
+  cursor: pointer;
+
+
+}
+
+.link-hover {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+/* la ligne cachée */
+.link-hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease;
+}
+.link-hover {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+/* la ligne cachée */
+.link-hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease;
+}
+
+/* animation */
+.link-hover:hover::after {
+    width: 100%;
+}
+
+/* animation */
+.link-hover:hover::after {
+    width: 100%;
+}
+nav {
+    display: flex;
+    gap: 20px;
+    padding-right: 25px;
+}
+.logo img {
+    height: 100px;
+}
+footer{
+    background-color: #212121;
+    color:white;
+    padding:40px;
+    text-align:center;
+    align-items: center;
+ 
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:15px;
+}
+
+.footer-links a{
+    color:darkgrey;
+    text-decoration:none;
+}
+
+.footer-links a:hover{
+    color:burlywood;
+}
+
+.image img {
+    height: 500px;
+    width: 90%;
+    border-radius: 30px;
+  
+}
+.texte {
+    display: flex;
+    flex-direction: column;
+ max-width: 700px;
+    color: white;
+}
+.image  {
+flex: 1;
+width: 100%;
+}
+
+.se {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-form {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 10px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    display: flex;
+    gap: 30px;
+
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.RSS {
+    display: flex;
+    gap: 10px;
+}
+.RS a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.RSS a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.button a{
+    text-decoration: none;
+ 
+    color: white;
+    padding: 13px 20px;
+    background-color: red;
+    border-radius: 10px;
+
+}
+.input-group input {
+    border-radius: 0px;
+    padding: 6px;
+    border: 1px solid white;
+}
+
+.contact-form button {
+    background-color: red;
+    padding: 7px;
+    border-radius: 0px;
+    color: white;
+    border: none;
+}
+
+    </style>
+</head>
+<body>
+    <header id="home">
+        <div class="overlay"></div>
+      
+        <div class="top">
+          <div class="logo">
+            <img src="Photoroom_20260327_164214 copie.PNG" alt="Logo">
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html#home" class="link-hover">HOME</a></li>
+              <li><a href="index.html#about" class="link-hover">ABOUT US</a></li>
+              <li><a href="index.html#services" class="link-hover">SERVICE</a></li>
+              <li><a href="index.html#project" class="link-hover">PROJECT</a></li>
+              <li><a href="index.html#contact" class="link-hover">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      
+
+      </header>
+      <main>
+        <div class="se">
+        <div class="image">
+<img src="Photoroom_20260401_225443.PNG" alt="" srcset="">
+        </div>
+        <div>
+            <div class="texte">
+            <h1>DOSSIERS TECHNIQUES</h1>
+            <p>Nous accompagnons le projet du début à la fin : coordination des intervenants, suivi de chantier et contrôle de qualité pour garantir un résultat fidèle aux intentions de conception et aux attentes du client.</p>
+        </div>
+        <div class="contactez">
+            <form class="contact-form">
+        
+                <div class="input-group">
+                    <label>Nom</label>
+                    <input type="text" placeholder="Votre nom">
+                </div>
+    
+                <div class="input-group">
+                    <label>Prénom</label>
+                    <input type="text" placeholder="Votre prénom">
+                </div> <br>
+    
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Votre email">
+                </div> <br>
+    
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Votre message"></textarea>
+                </div> <br>
+    
+                <button type="submit">ENVOYER</button>
+    
+            </form>
+        </div>
+        </div>
+
+    </div>
+<div class="button">
+    <a href="">MEET THE ARCHITECT</a>
+    <a href=""><i class="fa-brands fa-whatsapp"></i>DISCUSS</a>
+</div>
+      </main>
+
+      <footer>
+        <div class="foot">
+            <h3>KRATOS ARCHITECTURE</h3>
+         
+            <div class="RSS">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-links">
+            <a href="#">HOME</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">SERVICES</a>
+            <a href="#">CONTACT</a>
+            </div>
+        </div>
+            
+            <p style="margin-top:20px;color:grey;">
+            © 2026 Kratos Architecture — Tous droits réservés — By Hilarion V
+            </p>
+            </footer>
+    
+</body>
+</html>
