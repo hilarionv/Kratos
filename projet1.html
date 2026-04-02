@@ -244,6 +244,21 @@ footer{
 nav {
     padding: 15px 20px;
 }
+.projet {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ 
+    color: white;
+    gap: 40px;
+}
+
+.photosecondaire {
+    flex: 1;
+  display: flex;
+  justify-content: space-around;
+    gap: 10px;
+}
 
 
 .nav-links {
@@ -366,6 +381,22 @@ main {
     margin: 10px;
 }
 
+.projet {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ 
+    color: white;
+    gap: 40px;
+}
+
+.photosecondaire {
+    flex: 1;
+  display: flex;
+  justify-content: space-around;
+    gap: 10px;
+}
+
 }
 </style>
 <body>
@@ -397,11 +428,11 @@ main {
         
         <!-- FULL SCREEN MENU -->
         <div class="full-menu" id="fullMenu">
-            <a href="index.html#home" onclick="toggleMenu()">HOME</a>
-            <a href="index.html#about" onclick="toggleMenu()">ABOUT US</a>
-            <a href="index.html#services" onclick="toggleMenu()">SERVICE</a>
-            <a href="index.html#project" onclick="toggleMenu()">PROJECT</a>
-            <a href="index.html#contact" onclick="toggleMenu()">CONTACT</a>
+            <li><a href="index.html#home" class="link-hover">ACCEUIL</a></li>
+            <li><a href="index.html#about" class="link-hover">A PROPOS</a></li>
+            <li><a href="index.html#services" class="link-hover">SERVICES</a></li>
+            <li><a href="index.html#project" class="link-hover">PROJETS</a></li>
+            <li><a href="index.html#contact" class="link-hover">CONTACT</a></li>
         </div>
       
 </header>
