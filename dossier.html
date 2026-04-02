@@ -229,17 +229,544 @@ width: 100%;
 
 }
 .input-group input {
-    border-radius: 0px;
-    padding: 6px;
-    border: 1px solid white;
+   border-radius: 6px;
+   padding: 6px;
+   border: 1px solid white;
 }
 
 .contact-form button {
-    background-color: red;
-    padding: 7px;
-    border-radius: 0px;
+   background-color: red;
+   padding: 10px;
+   border-radius: 6px;
+   color: white;
+   border: none;
+}
+
+.full-menu {
+    display: none; /* caché par défaut */
+    position: fixed; /* au-dessus de tout le site */
+    inset: 0;       /* top:0; right:0; bottom:0; left:0 */
+    background-color: black;
+    z-index: 9999;  /* très au-dessus des autres éléments */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.full-menu a {
     color: white;
-    border: none;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* BOUTON BURGER */
+.burger {
+    display: none; /* affiché uniquement sur mobile */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+/* NAVIGATION */
+nav {
+    padding: 15px 20px;
+}
+
+
+.nav-links {
+    gap: 15px;
+}
+
+/* HEADER */
+.header-content h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.header-content p {
+    text-align: center;
+}
+
+
+/* SERVICES / CARDS */
+
+
+.top1 h1 {
+  font-size: 25px;
+ 
+}
+
+.foot {
+    display: flex;
+flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.top {
+  display: flex;
+ flex-direction: column;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative; /* pour être au-dessus de l'overlay */
+  z-index: 2;
+}
+.image img {
+    height: 500px;
+    width: 100%;
+    border-radius: 30px;
+  
+}
+.texte {
+    display: flex;
+    flex-direction: column;
+ max-width: 100%;
+    color: white;
+}
+.image  {
+
+width: 100%;
+}
+
+.se {
+    display: flex;
+
+   flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.button a{
+    text-decoration: none;
+ font-size: 12px;
+    color: white;
+    padding: 13px 20px;
+    background-color: red;
+    border-radius: 10px;
+
+}
+.button {
+    display: flex;
+    gap: 30px;
+
+ align-items: center;
+ justify-content: center;
+  margin-top: 40px;
+}
+}
+
+@media screen and (max-width: 430px) {
+
+/* HEADER */
+.header-content h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.header-content p {
+    font-size: 0.9rem;
+}
+
+/* BUTTONS */
+.button1,
+.button2 {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+}
+
+
+/* SERVICES */
+
+
+.top1 h1 {
+  font-size: 25px;
+ 
+}
+
+.foot {
+    display: flex;
+flex-direction: column;
+    gap: 70px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.top {
+  display: flex;
+ flex-direction: column;
+  align-items: center;
+  padding: 20px 30px;
+  position: relative; /* pour être au-dessus de l'overlay */
+  z-index: 2;
+}
+
+nav ul li {
+    font-weight: 600;
+    font-size: 12px;
+    
+}
+
+nav {
+    display: none; /* cacher ton nav normal */
+  }
+  .burger {
+    display: flex; /* afficher le burger */
+  }
+  .image img {
+    height: 500px;
+    width: 90%;
+    border-radius: 30px;
+  
+}
+.texte {
+    display: flex;
+    flex-direction: column;
+ max-width: 100%;
+    color: white;
+}
+.image  {
+
+width: 100%;
+}
+
+.se {
+    display: flex;
+
+   flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.button a{
+    text-decoration: none;
+ font-size: 12px;
+    color: white;
+    padding: 13px 20px;
+    background-color: red;
+    border-radius: 10px;
+
+}
+
+}
+@media screen and (max-width: 600px) {
+
+
+
+
+.nav-links {
+    gap: 15px;
+}
+
+/* HEADER */
+.header-content h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.header-content p {
+    text-align: center;
+}
+
+
+
+.top1 h1 {
+  font-size: 25px;
+ 
+}
+
+.foot {
+    display: flex;
+flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+nav {
+    display: none; /* cacher ton nav normal */
+  }
+  .burger {
+    display: flex; /* afficher le burger */
+  }
+
+
+
+
+
+.top {
+  display: flex;
+ flex-direction: column;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative; /* pour être au-dessus de l'overlay */
+  z-index: 2;
+}
+.image img {
+    height: 500px;
+    width: 100%;
+    border-radius: 30px;
+  
+}
+.texte {
+    display: flex;
+    flex-direction: column;
+ max-width: 100%;
+    color: white;
+}
+.image  {
+
+width: 100%;
+align-items: center;
+
+}
+
+.se {
+    display: flex;
+
+   flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.button a{
+    text-decoration: none;
+ font-size: 12px;
+    color: white;
+    padding: 13px 20px;
+    background-color: red;
+    border-radius: 10px;
+
+}
+.button {
+    display: flex;
+    gap: 30px;
+
+ align-items: center;
+ justify-content: center;
+  margin-top: 40px;
+}
+
+
+}
+@media screen and (max-width: 900px) {
+
+
+    nav {
+    padding: 15px 20px;
+}
+
+.nav-links {
+    gap: 15px;
+}
+
+/* HEADER */
+.header-content h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.header-content p {
+    text-align: center;
+}
+
+
+
+.top1 h1 {
+  font-size: 25px;
+ 
+}
+
+.foot {
+    display: flex;
+flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+
+
+
+
+
+
+.top {
+  display: flex;
+ flex-direction: column;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative; /* pour être au-dessus de l'overlay */
+  z-index: 2;
+}
+.image img {
+    height: 500px;
+    width: 100%;
+    border-radius: 30px;
+  
+}
+.texte {
+    display: flex;
+    flex-direction: column;
+ max-width: 100%;
+    color: white;
+}
+.image  {
+
+width: 100%;
+align-items: center;
+
+}
+
+.se {
+    display: flex;
+
+   flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.button a{
+    text-decoration: none;
+ font-size: 12px;
+    color: white;
+    padding: 13px 20px;
+    background-color: red;
+    border-radius: 10px;
+
+}
+.button {
+    display: flex;
+    gap: 30px;
+
+ align-items: center;
+ justify-content: center;
+  margin-top: 40px;
+}
+
+
+}
+@media screen and (max-width: 1080px) {
+
+
+nav {
+padding: 15px 20px;
+}
+
+.nav-links {
+gap: 15px;
+}
+
+/* HEADER */
+.header-content h1 {
+font-size: 2rem;
+text-align: center;
+}
+
+.header-content p {
+text-align: center;
+}
+
+
+
+.top1 h1 {
+font-size: 25px;
+
+}
+
+.foot {
+display: flex;
+flex-direction: column;
+gap: 60px;
+align-items: center;
+}
+
+
+
+
+
+
+.top {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px 40px;
+position: relative; /* pour être au-dessus de l'overlay */
+z-index: 2;
+}
+.image img {
+height: 500px;
+width: 100%;
+border-radius: 30px;
+
+}
+.texte {
+display: flex;
+flex-direction: column;
+max-width: 100%;
+color: white;
+}
+.image  {
+
+width: 100%;
+align-items: center;
+
+}
+
+.se {
+display: flex;
+
+flex-direction: column;
+align-items: center;
+gap: 40px;
+}
+
+.button a{
+text-decoration: none;
+font-size: 12px;
+color: white;
+padding: 13px 20px;
+background-color: red;
+border-radius: 10px;
+
+}
+.button {
+display: flex;
+gap: 30px;
+
+align-items: center;
+justify-content: center;
+margin-top: 40px;
+}
+
+header,
+main {
+    margin: 10px;
+}
+
+
 }
 
     </style>
@@ -249,18 +776,35 @@ width: 100%;
         <div class="overlay"></div>
       
         <div class="top">
-          <div class="logo">
-            <img src="Photoroom_20260327_164214 copie.PNG" alt="Logo">
-          </div>
-          <nav>
-            <ul>
-              <li><a href="index.html#home" class="link-hover">HOME</a></li>
-              <li><a href="index.html#about" class="link-hover">ABOUT US</a></li>
-              <li><a href="index.html#services" class="link-hover">SERVICE</a></li>
-              <li><a href="index.html#project" class="link-hover">PROJECT</a></li>
-              <li><a href="index.html#contact" class="link-hover">CONTACT</a></li>
-            </ul>
-          </nav>
+            <div class="logo">
+                <img src="Photoroom_20260327_164214 copie.PNG" alt="Logo">
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html#home" class="link-hover">HOME</a></li>
+                    <li><a href="index.html#about" class="link-hover">ABOUT US</a></li>
+                    <li><a href="index.html#services" class="link-hover">SERVICE</a></li>
+                    <li><a href="index.html#project" class="link-hover">PROJECT</a></li>
+                    <li><a href="index.html#contact" class="link-hover">CONTACT</a></li>
+                </ul>
+            </nav>
+        
+            <!-- BOUTON BURGER -->
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        
+        <!-- FULL SCREEN MENU -->
+        <div class="full-menu" id="fullMenu">
+            <a href="index.html#home" onclick="toggleMenu()">HOME</a>
+            <a href="index.html#about" onclick="toggleMenu()">ABOUT US</a>
+            <a href="index.html#services" onclick="toggleMenu()">SERVICE</a>
+            <a href="index.html#project" onclick="toggleMenu()">PROJECT</a>
+            <a href="index.html#contact" onclick="toggleMenu()">CONTACT</a>
         </div>
       
 
@@ -272,8 +816,10 @@ width: 100%;
         </div>
         <div>
             <div class="texte">
-            <h1>DOSSIERS TECHNIQUES</h1>
-            <p>Nous accompagnons le projet du début à la fin : coordination des intervenants, suivi de chantier et contrôle de qualité pour garantir un résultat fidèle aux intentions de conception et aux attentes du client.</p>
+            <h1>Maîtrise d’Œuvre & Suivi Technique</h1>
+            <p>Nous assurons le pilotage complet de votre chantier. Notre expertise en dossiers d'exécution (EXE) nous permet de coordonner les différents corps d'état avec précision, garantissant le respect des délais, des budgets et des normes de construction en vigueur.  <br>
+
+                Livrables : Planning de chantier, rapports de visite et contrôle qualité continu.</p>
         </div>
         <div class="contactez">
             <form class="contact-form">
@@ -333,6 +879,18 @@ width: 100%;
             © 2026 Kratos Architecture — Tous droits réservés — By Hilarion V
             </p>
             </footer>
+
+            <script>
+                function toggleMenu() {
+                    const menu = document.getElementById("fullMenu");
+                    if (menu.style.display === "flex") {
+                        menu.style.display = "none";
+                    } else {
+                        menu.style.display = "flex";
+                    }
+                }
+                
+                    </script>
     
 </body>
 </html>

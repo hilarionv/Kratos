@@ -29,7 +29,7 @@ href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
 
 body{
     scroll-behavior: smooth;
-background-color: #212121;
+    background-color: #212121;
 margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -139,7 +139,7 @@ main {
 
 .contact {
   
-    padding: 80px;
+    padding: 50px;
     margin: 30px;
     border-radius: 30px;
     background-color: black;
@@ -153,10 +153,16 @@ main {
 }
 
 .number {
-    font-size: 60px;
+    font-size: 50px;
+  
+    padding-top: 10px;
+    padding-bottom: 30px;
+  
+}
+.number span {
+    font-size: 50px;
     color: #212121;
     font-weight: 500;
-    padding-top: 10px;
 }
 
 nav ul {
@@ -351,7 +357,7 @@ footer{
 
 .pro {
     display: flex;
-    gap: 30px;
+    gap: 60px;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -559,12 +565,15 @@ transition: transform 0.4s ease;
 .texte {
     display: flex;
     gap: 40px;
-    text-align: justify;
+   
    
 }
 .texte p {
  
    font-size: 16px;
+   text-align: left;
+
+  
   
 }
 
@@ -588,15 +597,19 @@ margin-bottom: 30px;
 .photo {
     border-right: 1px solid #1f1f1f;
     padding-right: 30px;
-    text-align: justify;
+
+
 }
 
-.go {
+.go  {
     text-decoration: none;
     color: white;
     padding: 8px 18px;
     border-radius: 10px;
     background-color: red;
+
+ 
+
 }
 
 /* SPLIDE FIX */
@@ -657,7 +670,9 @@ header .overlay {
   position: relative; /* pour être au-dessus de l'overlay */
   z-index: 2;
 }
-
+.goo {
+    margin-top: 40px;
+}
 
 
 
@@ -683,6 +698,45 @@ header .overlay {
 
   color: white;
 }
+
+/* Burger mobile */
+/* ===== FULL SCREEN MENU POUR MOBILE ===== */
+.full-menu {
+    display: none; /* caché par défaut */
+    position: fixed; /* au-dessus de tout le site */
+    inset: 0;       /* top:0; right:0; bottom:0; left:0 */
+    background-color: black;
+    z-index: 9999;  /* très au-dessus des autres éléments */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.full-menu a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* BOUTON BURGER */
+.burger {
+    display: none; /* affiché uniquement sur mobile */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* RESPONSIVE POUR MOBILE ≤ 400px */
+
+
 
 
 
@@ -779,13 +833,78 @@ flex-direction: column;
   position: relative; /* pour être au-dessus de l'overlay */
   z-index: 2;
 }
+.texte {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+.texte p {
+ 
+   font-size: 14px;
+}
+
+.texte h4 {
+color: burlywood;
+margin-bottom: 20px;
+}
+
+/* colonnes égales */
+.we,
+.photo,
+.valeurs {
+ 
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.we,
+.photo {
+    border-right: none;
+    padding-right: 0;
+}
+}
+@media screen and (max-width: 930px) {
+    .texte {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+.texte p {
+ 
+   font-size: 14px;
+}
+
+.texte h4 {
+color: burlywood;
+margin-bottom: 20px;
+}
+
+/* colonnes égales */
+.we,
+.photo,
+.valeurs {
+ 
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.we,
+.photo {
+    border-right: none;
+    padding-right: 0;
+}
 }
 @media screen and (max-width: 600px) {
 
 /* NAVIGATION */
 nav {
-    padding: 15px 20px;
-}
+    display: none; /* cacher ton nav normal */
+  }
+  .burger {
+    display: flex; /* afficher le burger */
+  }
 
 
 .nav-links {
@@ -820,7 +939,7 @@ nav {
 }
 
 .top1 h1 {
-  font-size: 25px;
+  font-size: 30px;
  
 }
 
@@ -844,7 +963,7 @@ flex-direction: column;
 .contact {
   
   padding: 30px;
-  margin: 30px;
+
   border-radius: 30px;
   background-color: black;
 
@@ -882,6 +1001,14 @@ flex-direction: column;
 color: burlywood;
 margin-bottom: 20px;
 }
+
+.About,
+.contact,
+header,
+.project,
+.g {
+    margin: 10px;
+}
 }
 
 
@@ -892,6 +1019,13 @@ margin-bottom: 20px;
 .header-content h1 {
     font-size: 1.6rem;
     line-height: 1.3;
+}
+.About,
+.contact,
+header,
+.project,
+.g {
+    margin: 10px;
 }
 nav ul {
     list-style: none;
@@ -925,7 +1059,7 @@ nav ul {
 }
 
 .top1 h1 {
-  font-size: 25px;
+  font-size: 30px;
  
 }
 
@@ -981,7 +1115,7 @@ margin-bottom: 20px;
 .contact {
   
   padding: 30px;
-  margin: 30px;
+
   border-radius: 30px;
   background-color: black;
 
@@ -1039,13 +1173,13 @@ nav ul li {
     font-size: 12px;
     
 }
+
 nav {
-    display: flex;
- 
-  justify-content: center;
-  align-items: center;
-  
-}
+    display: none; /* cacher ton nav normal */
+  }
+  .burger {
+    display: flex; /* afficher le burger */
+  }
 
 }
 
@@ -1072,23 +1206,43 @@ nav {
 </style>
 </head>
 <body>
+ 
     <header id="home">
         <div class="overlay"></div>
       
         <div class="top">
-          <div class="logo">
-            <img src="Photoroom_20260327_164214 copie.PNG" alt="Logo">
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#home" class="link-hover">HOME</a></li>
-              <li><a href="#about" class="link-hover">ABOUT US</a></li>
-              <li><a href="#services" class="link-hover">SERVICE</a></li>
-              <li><a href="#project" class="link-hover">PROJECT</a></li>
-              <li><a href="#contact" class="link-hover">CONTACT</a></li>
-            </ul>
-          </nav>
+            <div class="logo">
+                <img src="Photoroom_20260327_164214 copie.PNG" alt="Logo">
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home" class="link-hover">HOME</a></li>
+                    <li><a href="#about" class="link-hover">ABOUT US</a></li>
+                    <li><a href="#services" class="link-hover">SERVICE</a></li>
+                    <li><a href="#project" class="link-hover">PROJECT</a></li>
+                    <li><a href="#contact" class="link-hover">CONTACT</a></li>
+                </ul>
+            </nav>
+        
+            <!-- BOUTON BURGER -->
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
+        
+        <!-- FULL SCREEN MENU -->
+        <div class="full-menu" id="fullMenu">
+            <a href="#home" onclick="toggleMenu()">HOME</a>
+            <a href="#about" onclick="toggleMenu()">ABOUT US</a>
+            <a href="#services" onclick="toggleMenu()">SERVICE</a>
+            <a href="#project" onclick="toggleMenu()">PROJECT</a>
+            <a href="#contact" onclick="toggleMenu()">CONTACT</a>
+        </div>
+
+    </div>
       
         <div class="top1">
           <h1>KRATOS ARCHITECTURE</h1>
@@ -1106,7 +1260,7 @@ nav {
             <!-- titre structuré comme les autres sections -->
             <div class="section-title">
                 <h2>ABOUT US</h2>
-                <span class="number">01</span>
+               <div class="number"> <span class="numberr">01</span> </div>
             </div>
         
             <div class="about-content">
@@ -1114,43 +1268,49 @@ nav {
                 <div class="texte">
         
                     <div class="we">
-                        <h4>US</h4>
+                        <h4>IDENTITÉ</h4>
                         <p>
-                            <strong>KRATOS ARCHITECTURE</strong> est un cabinet engagé dans la création
-                            d'espaces minimalistes et durables, pensés pour s'intégrer à leur environnement
-                            et répondre aux besoins réels de leurs usagers.
+                            <strong>KRATOS ARCHITECTURE</strong> Architecte d'espaces minimalistes et durables, notre cabinet s'engage pour une architecture de l'essentiel. Guidés par la rigueur technique et la créativité, nous livrons des projets fonctionnels et responsables —pour une optimisation des performances énergétiques.
                         </p>
                     </div>
         
                     <div class="photo">
                         <div class="vision">
-                            <h4>VISION</h4>
+                            <h4>PHILOSOPHIE</h4>
                             <p>
-                                Offrir une architecture minimaliste, élégante et durable,
-                                conçue pour s'intégrer harmonieusement à chaque environnement.
+                                Notre pratique architecturale se définit par une quête constante de l'essentiel. Nous concevons la lumière comme une matière première, le béton comme un espace de silence et la rigueur géométrique comme le fondement de notre langage spatial.
+
+                                Chaque projet naît d'une lecture attentive du lieu. Qu'il s'agisse d'une création pure ou de la transformation d'un bâti existant, nous cherchons le dialogue juste entre l'héritage du lieu et la modernité. Chaque projet naît d'une lecture attentive du lieu. Qu'il s'agisse d'une création pure ou de la transformation d'un bâti existant, nous cherchons le dialogue juste entre l'héritage du lieu et la modernité.
                             </p>
                         </div>
                     </div>
         
                     <div class="valeurs">
-                        <h4>VALUES</h4>
-                        <p>
-                            Chez KRATOS ARCHITECTURE, chaque projet repose sur quatre piliers :
-                            la créativité pour imaginer autrement, la durabilité pour construire
-                            avec responsabilité, la rigueur pour garantir l'excellence, et la
-                            simplicité pour révéler l'essentiel.
+                        <h4>VISION, MISSION & VALEURS</h4>
+                        <p>        
+Vision <br>Faire de chaque espace bâti — qu’il soit créé ou restauré — un dialogue juste entre la lumière, la matière et l'humain. <br>
+
+
+Mission  <br>Concevoir et livrer des projets sobres, rigoureux et responsables, du premier trait à la remise des clés, en plaçant les besoins réels du client et la performance énergétique de l'ouvrage au centre de chaque décision. <br>
+
+
+Valeurs <br>
+ Créativité — 
+ Rigueur — 
+ Durabilité — 
+ Simplicité
                         </p>
                     </div>
         
                 </div>
         
             </div>
-    <a href="" class="go">CONTACT</a>
+  <div class="goo">  <a href="" class="go">CONTACT</a> </div> 
         </section>
 
         <section class="g" id="services">
             <h2>SERVICES</h2>
-            <span class="number">02</span>
+            <div class="number"> <span class="numberr">02</span> </div>
         
             <!-- SPLIDE -->
             <div class="splide services-slider">
@@ -1162,8 +1322,8 @@ nav {
                         <div class="splide__slide se">
                             <img src="Photoroom_20260401_230756.PNG" alt="">
                             <div class="text">
-                                <h5>GESTION ET ACCOMPAGNEMENT DE PROJET</h5>
-                                <p>Nous vous accompagnons du début à la fin!</p>
+                                <h5>Conseils & Stratégie Immobilière</h5>
+                                <p>L'accompagnement expert dès l'idée de projet.</p>
                             </div>
                             <div class="get"><a href="gestion.html">START</a></div>
                         </div>
@@ -1171,26 +1331,19 @@ nav {
                         <div class="splide__slide se">
                             <img src="Photoroom_20260401_225513.PNG" alt="">
                             <div class="text">
-                                <h5>CONCEPTION ARCHITECTURALE</h5>
-                                <p>Nous transformons les idées en projets concrets ...</p>
+                                <h5>Conception, Réhabilitation & Bioclimatique</h5>
+                                <p>De l'esquisse au permis de construire, une architecture qui a du sens.</p>
                             </div>
                             <div class="get"><a href="conception.html">START</a></div>
                         </div>
         
-                        <div class="splide__slide se">
-                            <img src="Photoroom_20260401_225424.PNG" alt="">
-                            <div class="text">
-                                <h5>ETUDE DE FAISABILITÉ</h5>
-                                <p>Nous évaluons le site, les contraites et le ...</p>
-                            </div>
-                            <div class="get"><a href="faisabilité.html">START</a></div>
-                        </div>
+                   
         
                         <div class="splide__slide se">
                             <img src="Photoroom_20260401_225527.PNG" alt="">
                             <div class="text">
-                                <h5>CONSEIL DESIGN</h5>
-                                <p>Nous évaluons le site, les contraites et le ...</p>
+                                <h5>Visualisation Architecturale Avancée</h5>
+                                <p>Une immersion visuelle haute fidélité pour valider vos choix.</p>
                             </div>
                             <div class="get"><a href="conseils.html">START</a></div>
                         </div>
@@ -1198,8 +1351,8 @@ nav {
                         <div class="splide__slide se">
                             <img src="Photoroom_20260401_225458.PNG" alt="">
                             <div class="text">
-                                <h5>PLANS</h5>
-                                <p>Nous préparons des plans précis...</p>
+                                <h5>Optimisation des Espaces & Ergonomie</h5>
+                                <p>La conception intérieure pensée par l’architecture.</p>
                             </div>
                             <div class="get"><a href="plans.html">START</a></div>
                         </div>
@@ -1207,10 +1360,18 @@ nav {
                         <div class="splide__slide se">
                             <img src="Photoroom_20260401_225443.PNG" alt="">
                             <div class="text">
-                                <h5>DOSSIERS TECHNIQUES</h5>
-                                <p>Nous préparons des plans précis...</p>
+                                <h5>Maîtrise d’Œuvre & Suivi Technique</h5>
+                                <p>La garantie d'une exécution rigoureuse, du terrassement à la livraison.</p>
                             </div>
                             <div class="get"><a href="dossier.html">START</a></div>
+                        </div>
+                        <div class="splide__slide se">
+                            <img src="Photoroom_20260401_225424.PNG" alt="">
+                            <div class="text">
+                                <h5>ETUDE DE FAISABILITÉ</h5>
+                                <p>Nous évaluons le site, les contraites et le ...</p>
+                            </div>
+                            <div class="get"><a href="faisabilité.html">START</a></div>
                         </div>
         
                     </div>
@@ -1223,7 +1384,7 @@ nav {
         
         <div class="project" id="project">
             <h2>PROJECT</h2>
-            <span class="number">03</span>
+            <div class="number"> <span class="numberr">03</span> </div>
             <div class="pro">
             <div class="project-image1">
                 <div class="image">
@@ -1257,7 +1418,7 @@ nav {
         
         <div class="contact" id="contact">
             <h2>CONTACT</h2>
-            <span class="number">04</span>
+            <div class="number"> <span class="numberr">04</span> </div>
         
             <div class="contact-section">
         
@@ -1358,6 +1519,18 @@ nav {
         
         });
         </script>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("fullMenu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+
+    </script>
         
 </body>
 </html>
