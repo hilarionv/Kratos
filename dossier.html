@@ -13,7 +13,17 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <style>
+        body h1,
+body h2,
+body h3,
+body h4 {
+    font-family: "Barlow Condensed", sans-serif;
+}
                 body {
     scroll-behavior: smooth;
 }
@@ -24,7 +34,7 @@ body{
 margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
 
 }
 header {
@@ -32,8 +42,8 @@ header {
   
 
  background-color: black;
-  margin: 30px;
-  border-radius: 30px;
+  margin: 10px;
+
   color: white;
   overflow: hidden; /* empêche le texte de dépasser */
 
@@ -53,8 +63,8 @@ main {
 
     background-color: black;
     padding: 30px;
-    margin: 30px;
-    border-radius: 30px;
+    margin: 10px;
+    
 
 
 
@@ -278,14 +288,14 @@ width: 100%;
 .top3 {
     display: flex;
     text-align: center;
-    margin: 30px;
+    margin: 10px;
     align-items: center;
     justify-content: center;
     color: white;
     background-color: black;
-    border-radius: 30px;
+
     min-height: 200px;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -404,9 +414,9 @@ nav ul {
     justify-content: center;
     color: white;
     background-color: black;
-    border-radius: 30px;
+
     min-height: 200px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .header-content p {
@@ -425,7 +435,7 @@ nav ul {
 
 
 .top1 h1 {
-  font-size: 25px;
+  font-size: 20px;
  
 }
 
@@ -437,6 +447,20 @@ flex-direction: column;
 }
 
 
+header {
+/* obligatoire pour overlay */
+  display: flex;
+ justify-content: space-between;
+
+ background-color: black;
+  margin: 10px;
+
+  color: white;
+  overflow: hidden; /* empêche le texte de dépasser */
+
+}
+
+
 
 
 
@@ -445,7 +469,7 @@ flex-direction: column;
 
 .top {
   display: flex;
- flex-direction: column;
+justify-content: center;
   align-items: center;
   padding: 20px 30px;
   position: relative; /* pour être au-dessus de l'overlay */
@@ -533,7 +557,7 @@ width: 100%;
     justify-content: center;
     color: white;
     background-color: black;
-    border-radius: 30px;
+
     min-height: 200px;
     font-size: 25px;
 }
@@ -557,7 +581,7 @@ nav {
 
 .top {
   display: flex;
- flex-direction: column;
+justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   position: relative; /* pour être au-dessus de l'overlay */
@@ -844,10 +868,11 @@ main {
             <a href="index.html#contact" onclick="toggleMenu()">CONTACT</a>
         </div>
       
-        <div class="top3">
-            <h2>SERVICES</h2>
-        </div>
+ 
       </header>
+      <div class="top3">
+        <h2>SERVICES</h2>
+    </div>
       <main>
         <div class="se">
         <div class="image">
