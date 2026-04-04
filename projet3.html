@@ -331,12 +331,12 @@ flex-direction: column;
 
 
 
-
 .top {
   display: flex;
- flex-direction: column;
+justify-content: space-between;
+
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px 30px;
   position: relative; /* pour être au-dessus de l'overlay */
   z-index: 2;
 }
@@ -389,6 +389,14 @@ flex-direction: column;
 
 
 
+.top {
+  display: flex;
+justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  position: relative; /* pour être au-dessus de l'overlay */
+  z-index: 2;
+}
 
 nav ul li {
     font-weight: 600;
@@ -446,15 +454,6 @@ width: 100%;
     min-height: 200px;
     font-size: 20px;
 }
-.top {
-  display: flex;
-justify-content: space-between;
-
-  align-items: center;
-  padding: 20px 30px;
-  position: relative; /* pour être au-dessus de l'overlay */
-  z-index: 2;
-}
 
 }
 
@@ -504,6 +503,13 @@ justify-content: space-between;
   position: relative; /* pour être au-dessus de l'overlay */
   z-index: 2;
 }
+nav {
+    display: none; /* cacher ton nav normal */
+    list-style: none;
+  }
+  .burger {
+    display: flex; /* afficher le burger */
+  }
 
 
 }
@@ -538,6 +544,7 @@ justify-content: space-between;
         
         <!-- FULL SCREEN MENU -->
         <div class="full-menu" id="fullMenu">
+            <span  onclick="toggleMenu()" style="color: white; padding-bottom: 60px; font-weight: 700; font-size: 20px; cursor: pointer; text-align: start;">X</span>
             <a href="index.html#home" onclick="toggleMenu()">HOME</a>
             <a href="index.html#about" onclick="toggleMenu()">ABOUT US</a>
             <a href="index.html#services" onclick="toggleMenu()">SERVICE</a>
