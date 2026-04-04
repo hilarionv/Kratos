@@ -293,7 +293,7 @@ footer{
 
 
 .top1 h1 {
-    font-size: 70px;
+    font-size: 85px;
 }
 
 
@@ -491,11 +491,11 @@ footer{
 .se {
     padding: 10px;
     background-color: #0A0A0A;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 320px;
    
     height: 650px;
-    margin-top: 40px;
+    margin-top: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -511,7 +511,7 @@ transition: transform 0.4s ease;
 }
 .se img {
     border-radius: 20px;
-    height: 350px;
+    height: 340px;
 }
 .se p {
     font-size: 14px;
@@ -577,13 +577,7 @@ transition: transform 0.4s ease;
 /* ===== ABOUT FIX ===== */
 
 /* titre comme les autres sections */
-.section-title {
-    display: flex;
-  
-    gap: 20px;
-    margin-bottom: 40px;
-    flex-direction: column;
-}
+
 
 /* conteneur principal */
 
@@ -597,23 +591,20 @@ transition: transform 0.4s ease;
 }
 .texte p {
  
-   font-size: 16px;
-   text-align: left;
+   font-size: 15px;
+   text-align: justify;
    color: white;
+   line-height: 21px;
 
   
   
 }
 
-.texte h4 {
-color: burlywood;
-margin-bottom: 30px;
-}
+
 
 /* colonnes égales */
 .we,
-.photo,
-.valeurs {
+.vision {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -817,7 +808,7 @@ nav {
 }
 
 .top1 h1 {
-  font-size: 25px;
+  font-size: 28px;
  
 }
 
@@ -966,7 +957,7 @@ nav {
 }
 
 .top1 h1 {
-  font-size: 30px;
+  font-size: 38px;
  
 }
 
@@ -1086,7 +1077,7 @@ nav ul {
 }
 
 .top1 h1 {
-  font-size: 30px;
+  font-size: 38px;
  
 }
 
@@ -1258,10 +1249,12 @@ nav {
                 <div></div>
                 <div></div>
             </div>
+          
         </div>
         
         <!-- FULL SCREEN MENU -->
         <div class="full-menu" id="fullMenu">
+            <span  onclick="toggleMenu()" style="color: white; padding-bottom: 60px; font-weight: 700; font-size: 20px; cursor: pointer; text-align: start;">X</span>
             <a href="#home" onclick="toggleMenu()">HOME</a>
             <a href="#about" onclick="toggleMenu()">ABOUT US</a>
             <a href="#services" onclick="toggleMenu()">SERVICE</a>
@@ -1285,24 +1278,25 @@ nav {
         <section class="About" id="about">
 
             <!-- titre structuré comme les autres sections -->
-            <div class="section-title">
-                <h3 style="color: burlywood;">IDENTITÉ</h3>
-             <h1 style="color: white;">KRATOS ARCHITECTURE</h1>
-            </div>
+         
         
             <div class="about-content">
         
                 <div class="texte">
         
                     <div class="we">
+                        <div class="section-title">
+                            <h3 style="color: burlywood; margin-bottom: 0px;">IDENTITÉ</h3>
+                         <h2 style="color: white; margin-top: 4px; font-size: 35px;">KRATOS ARCHITECTURE</h2>
+                        </div>
                         <p>
                        Architecte d'espaces minimalistes et durables, notre cabinet s'engage pour une architecture de l'essentiel. Guidés par la rigueur technique et la créativité, nous livrons des projets fonctionnels et responsables —pour une optimisation des performances énergétiques.
                         </p>
                     </div>
         
-                    <div class="photo">
+                  
                         <div class="vision">
-                            <h4>PHILOSOPHIE</h4>
+                            <h3 style="color: burlywood;">PHILOSOPHIE</h3>
                             <p>
                                 Notre pratique architecturale se définit par une quête constante de l'essentiel. Nous concevons la lumière comme une matière première, le béton comme un espace de silence et la rigueur géométrique comme le fondement de notre langage spatial.
 
@@ -1316,7 +1310,9 @@ nav {
                 </div>
         
             </div>
-  <div class="goo">  <a href="" class="go">CONTACT</a> </div> 
+  <div class="goo" style="gap:20px; display: flex;">  <a href="" class="go">CONTACT</a> 
+<a href="apropos.html" class="go">VOIR PLUS</a>
+</div> 
         </section>
 
         <section class="g" id="services">

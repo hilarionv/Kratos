@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+    /* ================= GLOBAL ================= */
+
+body h1,
+body h2,
+body h3,
+body h4 {
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+body {
+    background-color: #212121;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Condensed", sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background-color: black;
+    margin: 10px;
+    color: white;
+    overflow: hidden;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo img {
+    height: 100px;
+}
+
+/* ================= NAV ================= */
+
+nav {
+    display: flex;
+    gap: 20px;
+    padding-right: 25px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    font-weight: 600;
+}
+
+/* hover underline */
+
+.link-hover {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.link-hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease;
+}
+
+.link-hover:hover::after {
+    width: 100%;
+}
+
+/* ================= MAIN ================= */
+
+main {
+    background-color: black;
+    padding: 60px 30px;
+    margin: 10px;
+    text-align: center;
+ 
+}
+
+h1 {
+    font-size: 46px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    margin-top: 70px;
+    letter-spacing: 2px;
+}
+
+h4 {
+    color: burlywood;
+}
+
+p {
+    color: #cfcfcf;
+    line-height: 1.7;
+}
+
+/* ================= KRATOS ================= */
+
+.kratos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 50px;
+    margin: 70px 0;
+    text-align: left;
+}
+
+.identité,
+.philosophie {
+    background-color: #262626;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+/* ================= A PROPOS ================= */
+
+.apropos {
+    max-width: 830px;
+    margin: 90px auto;
+    line-height: 1.8;
+}
+
+.apropos a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 26px;
+    border: 1px solid burlywood;
+    color: burlywood;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.apropos a:hover {
+    background-color: burlywood;
+    color: black;
+}
+
+/* ================= VALEURS ================= */
+
+.valeurs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.val {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    background-color: #262626;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.val:hover {
+    transform: translateY(-6px);
+    border: 1px solid burlywood;
+}
+
+.val p {
+    font-size: 18px;
+}
+
+/* ================= SERVICES ================= */
+
+.services {
+    margin-top: 90px;
+}
+
+.services .se {
+    background-color: #262626;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.services .se:hover {
+    border-left: 4px solid burlywood;
+    transform: translateX(6px);
+}
+
+/* ================= MENU MOBILE ================= */
+
+.full-menu {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    z-index: 9999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.full-menu a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* burger */
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #212121;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.RSS {
+    display: flex;
+    gap: 10px;
+}
+
+.RSS a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: burlywood;
+}
+</style>
+</head>
+<body>
+    <header id="home">
+        <div class="overlay"></div>
+      
+        <div class="top">
+            <div class="logo">
+                <img src="Photoroom_20260327_164214 copie.PNG" alt="Logo">
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html#home" class="link-hover">ACCEUIL</a></li>
+                    <li><a href="index.html#about" class="link-hover">A PROPOS</a></li>
+                    <li><a href="index.html#services" class="link-hover">SERVICES</a></li>
+                    <li><a href="index.html#project" class="link-hover">PROJETS</a></li>
+                    <li><a href="index.html#contact" class="link-hover">CONTACT</a></li>
+                </ul>
+            </nav>
+        
+            <!-- BOUTON BURGER -->
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+          
+        </div>
+        
+        <!-- FULL SCREEN MENU -->
+        <div class="full-menu" id="fullMenu">
+            <span  onclick="toggleMenu()" style="color: white; padding-bottom: 60px; font-weight: 700; font-size: 20px; cursor: pointer; text-align: start;">X</span>
+            <a href="indec.html#home" onclick="toggleMenu()">HOME</a>
+            <a href="index.html#about" onclick="toggleMenu()">ABOUT US</a>
+            <a href="index.html#services" onclick="toggleMenu()">SERVICE</a>
+            <a href="index.html#project" onclick="toggleMenu()">PROJECT</a>
+            <a href="index.html#contact" onclick="toggleMenu()">CONTACT</a>
+        </div>
+
+    </div>
+      
+     
+      </header>
+      <main>
+        <h1>KRATOS ARCHITECTURE</h1>
+        <div class="kratos">
+            <div class="identité">
+                <h4>Identité</h4>
+                <p>Architecte d'espaces minimalistes et durables, notre cabinet s'engage pour une architecture de l'essentiel. Guidés par la rigueur technique et la créativité, nous livrons des projets fonctionnels et responsables —pour une optimisation des performances énergétiques.</p>
+            </div>
+            <div class="philosophie">
+                <h4>Philosophie</h4>
+                <p> <strong>L’ESSENCE DU VIDE ET DE LA MATIÈRE</strong> <br> Notre pratique architecturale se définit par une quête constante de l'essentiel. Nous concevons la lumière comme une matière première, le béton comme un espace de silence et la rigueur géométrique comme le fondement de notre langage spatial.
+
+                    Chaque projet naît d'une lecture attentive du lieu. Qu'il s'agisse d'une création pure ou de la transformation d'un bâti existant, nous cherchons le dialogue juste entre l'héritage du lieu et la modernité. Chaque projet naît d'une lecture attentive du lieu. Qu'il s'agisse d'une création pure ou de la transformation d'un bâti existant, nous cherchons le dialogue juste entre l'héritage du lieu et la modernité.</p>
+            </div>
+        </div>
+
+<div class="apropos">
+    <h3>A PROPOS</h3>
+    <h4>LA FORCE DE LA SIMPLICITÉ</h4>
+    <p>Kratos Architecture repose sur la conviction que l'espace bâti doit transcender sa fonction primaire pour devenir une expérience sensorielle. Notre approche privilégie la noblesse des matériaux bruts et la précision du détail constructif.
+
+        Chaque réalisation est le fruit d’une symbiose entre le contexte paysager et les aspirations de nos clients. Nous sculptons le vide et la lumière pour produire des volumes sobres, où le silence architectural laisse place à la sérénité de l'habité.
+</p>
+<a href="">NOUS CONTACTER</a>
+</div>
+
+        <h3>Ce en quoi nous croyons</h3>
+
+
+        <h3>NOS VALEURS</h3>
+        <div class="valeurs">
+            <div class="val">
+                <h4>Créativité</h4>
+                <p>Chaque projet est une réponse unique, jamais une formule.</p>
+            </div>
+            <div class="val">
+                <h4>Rigeur</h4>
+                <p>La précision dans les détails est ce qui sépare le bon du remarquable.</p>
+            </div>
+            <div class="val">
+                <h4>Durabilité</h4>
+                <p>Concevoir avec conscience, en intégrant matériaux biosourcés et haute performance énergétique pour assurer la pérennité technique et écologique de nos ouvrages.</p>
+            </div>
+            <div class="val">
+                <h4>Simplicité</h4>
+                <p>Aller à l'essentiel, toujours. Rien de trop, rien qui manque.</p>
+            </div>
+        </div>
+
+        <div class="services">
+            <h3>NOS SERVICES</h3>
+            <div class="se">
+                <h4>Conception, Réhabilitation & Bioclimatique</h4>
+                <p>De l'esquisse au permis de construire, une architecture qui a du sens.</p>
+            </div>
+            <div class="se">
+                <h4>Maîtrise d’Œuvre & Suivi Technique</h4>
+                <p>La garantie d'une exécution rigoureuse, du terrassement à la livraison.</p>
+            </div>
+            <div class="se">
+                <h4>Optimisation des Espaces & Ergonomie</h4>
+                <p>La conception intérieure pensée par l’architecture.</p>
+            </div>
+            <div class="se">
+                <h4>Visualisation Architecturale Avancée</h4>
+                <p>Une immersion visuelle haute fidélité pour valider vos choix.</p>
+            </div>
+            <div class="se">
+                <h4>Conseils & Stratégie Immobilière</h4>
+                <p>L'accompagnement expert dès l'idée de projet.</p>
+            </div>
+        </div>
+      </main>
+      <footer>
+        <div class="foot">
+            <h3>KRATOS ARCHITECTURE</h3>
+         
+            <div class="RSS">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-links">
+            <a href="#">HOME</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">SERVICES</a>
+            <a href="#">CONTACT</a>
+            </div>
+        </div>
+            
+            <p style="margin-top:20px;color:grey;">
+            © 2026 Kratos Architecture — Tous droits réservés — By Hilarion V
+            </p>
+            </footer>
+
+            <script>
+                function toggleMenu() {
+                    const menu = document.getElementById("fullMenu");
+                    if (menu.style.display === "flex") {
+                        menu.style.display = "none";
+                    } else {
+                        menu.style.display = "flex";
+                    }
+                }
+                
+                    </script>
+                        
+</body>
