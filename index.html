@@ -476,42 +476,64 @@ footer{
     font-size: 13px;
 }
 
-.services {
 
-    gap: 25px;
+.text {
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 130px;
 }
 
+.services h4 {
+    text-transform: uppercase;
+  
+}
 .se {
-    padding: 10px;
-    background-color: #0A0A0A;
-    border-radius: 5px;
-    width: 320px;
-   
-    height: 650px;
-    margin-top: 35px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-padding-bottom: 20px;
-color: white;
-transition: transform 0.4s ease;
-
-
-}
-
-.se:hover{
-    transform: translateY(-10px);
-}
-.se img {
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #111;
     border-radius: 20px;
-    height: 340px;
+    padding: 20px;
 }
+
+/* titre */
+.se h4 {
+    text-transform: uppercase;
+  
+    flex: 1;
+}
+
+/* texte */
 .se p {
-    font-size: 14px;
-  color: darkgrey;
+    margin: 0;
+    flex: 2;
+    text-align: left;
+}
+
+/* flèche */
+.arrows {
+    flex: 0;
+}
+
+.services  {
+background-color: black;
+color: white;
+padding: 40px;
+margin: 10px;
+gap: 20px;
+display: flex;
+flex-direction: column;
+
+}
+
+.services p {
+    margin: 0;
+}
+
+.services .se:hover {
+    border-left: 4px solid burlywood;
+    transform: translateX(6px);
 }
 
 .g span {
@@ -747,6 +769,7 @@ header .overlay {
     height: 3px;
     background-color: white;
 }
+
 
 /* RESPONSIVE POUR MOBILE ≤ 400px */
 
@@ -1214,7 +1237,10 @@ nav {
 }
 
 
-
+.services h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
 
 
 
@@ -1313,77 +1339,73 @@ nav {
 </div> 
         </section>
 
-        <section class="g" id="services">
-            <h2>SERVICES</h2>
+        <div class="services">
+        
+            <h1 style="font-size: 46px;">SERVICES</h1>
             <div class="number"> <span class="numberr">02</span> </div>
         
-            <!-- SPLIDE -->
-            <div class="splide services-slider">
-        
-                <div class="splide__track">
-                    <div class="splide__list">
-        
-                        <!-- SLIDE -->
-                        <div class="splide__slide se">
-                            <img src="Photoroom_20260401_230756.PNG" alt="">
-                            <div class="text">
-                                <h4>Conseils & Stratégie Immobilière</h4>
-                                <p>L'accompagnement expert dès l'idée de projet.</p>
-                            </div>
-                            <div class="get"><a href="gestion.html">START</a></div>
-                        </div>
-        
-                        <div class="splide__slide se">
-                            <img src="Photoroom_20260401_225513.PNG" alt="">
-                            <div class="text">
-                                <h4>Conception, Réhabilitation & Bioclimatique</h4>
-                                <p>De l'esquisse au permis de construire, une architecture qui a du sens.</p>
-                            </div>
-                            <div class="get"><a href="conception.html">START</a></div>
-                        </div>
-        
-                   
-        
-                        <div class="splide__slide se">
-                            <img src="Photoroom_20260401_225527.PNG" alt="">
-                            <div class="text">
-                                <h4>Visualisation Architecturale Avancée</h4>
-                                <p>Une immersion visuelle haute fidélité pour valider vos choix.</p>
-                            </div>
-                            <div class="get"><a href="conseils.html">START</a></div>
-                        </div>
-        
-                        <div class="splide__slide se">
-                            <img src="Photoroom_20260401_225458.PNG" alt="">
-                            <div class="text">
-                                <h4>Optimisation des Espaces & Ergonomie</h4>
-                                <p>La conception intérieure pensée par l’architecture.</p>
-                            </div>
-                            <div class="get"><a href="plans.html">START</a></div>
-                        </div>
-        
-                        <div class="splide__slide se">
-                            <img src="Photoroom_20260401_225443.PNG" alt="">
-                            <div class="text">
-                                <h4>Maîtrise d’Œuvre & Suivi Technique</h4>
-                                <p>La garantie d'une exécution rigoureuse, du terrassement à la livraison.</p>
-                            </div>
-                            <div class="get"><a href="dossier.html">START</a></div>
-                        </div>
-                        <div class="splide__slide se">
-                            <img src="Photoroom_20260401_225424.PNG" alt="">
-                            <div class="text">
-                                <h4>ETUDE DE FAISABILITÉ</h4>
-                                <p>Nous évaluons le site, les contraites et le ...</p>
-                            </div>
-                            <div class="get"><a href="faisabilité.html">START</a></div>
-                        </div>
-        
-                    </div>
+            <div class="se">
+                <div class="text">
+                    <h4>Conception, Réhabilitation & Bioclimatique</h4>
+                    <p>De l'esquisse au permis de construire, une architecture qui a du sens.</p>
                 </div>
-        
+                <div class="arrows">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
+                        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+                    </svg>
+                </div>
             </div>
-        </section>
+        
+            <div class="se">
+                <div class="text">
+                    <h4>Maîtrise d’Œuvre & Suivi Technique</h4>
+                    <p>La garantie d'une exécution rigoureuse, du terrassement à la livraison.</p>
+                </div>
+                <div class="arrows">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
+                        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+                    </svg>
+                </div>
+            </div>
+        
+            <div class="se">
+                <div class="text">
+                    <h4>Optimisation des Espaces & Ergonomie</h4>
+                    <p>La conception intérieure pensée par l’architecture.</p>
+                </div>
+                <div class="arrows">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
+                        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+                    </svg>
+                </div>
+            </div>
+        
+            <div class="se">
+                <div class="text">
+                    <h4>Visualisation Architecturale Avancée</h4>
+                    <p>Une immersion visuelle haute fidélité pour valider vos choix.</p>
+                </div>
+                <div class="arrows">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
+                        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+                    </svg>
+                </div>
+            </div>
+        
+            <div class="se">
+                <div class="text">
+                    <h4>Conseils & Stratégie Immobilière</h4>
+                    <p>L'accompagnement expert dès l'idée de projet.</p>
+                </div>
+                <div class="arrows">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
+                        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+                    </svg>
+                </div>
+            </div>
+        
+        </div>
         
         
         
