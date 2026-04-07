@@ -726,7 +726,7 @@ header .overlay {
 }
 
 .top1 h1 {
-  font-size: 70px;
+  font-size: 90px;
  
 }
 
@@ -762,6 +762,7 @@ header .overlay {
     cursor: pointer;
     flex-direction: column;
     gap: 5px;
+    margin-right: 20px;
 }
 
 .burger div {
@@ -1220,6 +1221,57 @@ nav {
     display: flex; /* afficher le burger */
   }
 
+  .text {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.services h4 {
+    text-transform: uppercase;
+  
+}
+.se {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #111;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* titre */
+.se h4 {
+    text-transform: uppercase;
+  
+    flex: 1;
+}
+
+/* texte */
+.se p {
+    margin: 0;
+    flex: 2;
+    text-align: left;
+    font-size: 13px;
+}
+
+/* flèche */
+.arrows {
+    flex: 0;
+}
+
+.services  {
+background-color: black;
+color: white;
+padding: 20px;
+margin: 10px;
+gap: 20px;
+display: flex;
+flex-direction: column;
+
+}
+
 }
 
 
@@ -1279,10 +1331,10 @@ nav {
         <!-- FULL SCREEN MENU -->
         <div class="full-menu" id="fullMenu">
             <span  onclick="toggleMenu()" style="color: white; padding-bottom: 60px; font-weight: 700; font-size: 20px; cursor: pointer; text-align: start;">X</span>
-            <a href="#home" onclick="toggleMenu()">HOME</a>
-            <a href="#about" onclick="toggleMenu()">ABOUT US</a>
-            <a href="#services" onclick="toggleMenu()">SERVICE</a>
-            <a href="#project" onclick="toggleMenu()">PROJECT</a>
+            <a href="#home" onclick="toggleMenu()">ACCEUIL</a>
+            <a href="#about" onclick="toggleMenu()">A PROPOS</a>
+            <a href="#services" onclick="toggleMenu()">SERVICES</a>
+            <a href="#project" onclick="toggleMenu()">PROJETS</a>
             <a href="#contact" onclick="toggleMenu()">CONTACT</a>
         </div>
 
@@ -1323,8 +1375,6 @@ nav {
                             <h3 style="color: burlywood;">PHILOSOPHIE</h3>
                             <p>
                                 Notre pratique architecturale se définit par une quête constante de l'essentiel. Nous concevons la lumière comme une matière première, le béton comme un espace de silence et la rigueur géométrique comme le fondement de notre langage spatial.
-
-                                Chaque projet naît d'une lecture attentive du lieu. Qu'il s'agisse d'une création pure ou de la transformation d'un bâti existant, nous cherchons le dialogue juste entre l'héritage du lieu et la modernité. Chaque projet naît d'une lecture attentive du lieu. Qu'il s'agisse d'une création pure ou de la transformation d'un bâti existant, nous cherchons le dialogue juste entre l'héritage du lieu et la modernité.
                             </p>
                         </div>
                     </div>
@@ -1339,7 +1389,7 @@ nav {
 </div> 
         </section>
 
-        <div class="services">
+        <div class="services" id="services">
         
             <h1 style="font-size: 46px;">SERVICES</h1>
             <div class="number"> <span class="numberr">02</span> </div>
@@ -1350,9 +1400,11 @@ nav {
                     <p>De l'esquisse au permis de construire, une architecture qui a du sens.</p>
                 </div>
                 <div class="arrows">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
-                        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
-                    </svg>
+                    <a href="conception.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
+                            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         
@@ -1362,10 +1414,11 @@ nav {
                     <p>La garantie d'une exécution rigoureuse, du terrassement à la livraison.</p>
                 </div>
                 <div class="arrows">
-                    
+                    <a href="dossier.html">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
                         <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
                     </svg>
+                </a>
                 </div>
             </div>
         
@@ -1375,9 +1428,11 @@ nav {
                     <p>La conception intérieure pensée par l’architecture.</p>
                 </div>
                 <div class="arrows">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
-                        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
-                    </svg>
+                    <a href="plans.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
+                            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         
@@ -1387,9 +1442,11 @@ nav {
                     <p>Une immersion visuelle haute fidélité pour valider vos choix.</p>
                 </div>
                 <div class="arrows">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
-                        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
-                    </svg>
+                    <a href="conseils.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
+                            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         
@@ -1399,9 +1456,11 @@ nav {
                     <p>L'accompagnement expert dès l'idée de projet.</p>
                 </div>
                 <div class="arrows">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
-                        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
-                    </svg>
+                    <a href="gestion.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
+                            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         
