@@ -42,7 +42,7 @@ header {
   
 
  background-color: black;
-  margin: 10px;
+  margin: 5px;
 
   color: white;
   overflow: hidden; /* empêche le texte de dépasser */
@@ -63,12 +63,8 @@ main {
 
     background-color: black;
     padding: 30px;
-    margin: 10px;
+    margin: 5px;
     
-
-
-
-
 }
         nav ul {
     list-style: none;
@@ -289,7 +285,7 @@ width: 100%;
 .top3 {
     display: flex;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     align-items: center;
     justify-content: center;
     color: white;
@@ -410,7 +406,7 @@ nav ul {
 .top3 {
     display: flex;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     align-items: center;
     justify-content: center;
     color: white;
@@ -541,7 +537,7 @@ width: 100%;
 .top3 {
     display: flex;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     align-items: center;
     justify-content: center;
     color: white;
@@ -813,9 +809,21 @@ margin-top: 40px;
 
 header,
 main {
-    margin: 10px;
+    margin: 5px;
 }
 
+
+}
+
+/* ===== FIX LOGO + BURGER (MAX 430px) ===== */
+@media screen and (max-width: 430px) {
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
 }
 
@@ -827,7 +835,7 @@ main {
       
         <div class="top">
             <div class="logo">
-                <img src="Photoroom_20260327_164214 copie.PNG" alt="Logo">
+                <a href="index.html"> <img src="Photoroom_20260327_164214 copie.PNG" alt="Logo"> </a> 
             </div>
             
             <nav>

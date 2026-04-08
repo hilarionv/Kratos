@@ -162,7 +162,7 @@ margin: 0;
 .contact {
   
     padding: 50px;
-    margin: 10px;
+    margin: 5px;
     
     background-color: black;
  
@@ -321,7 +321,7 @@ footer{
     padding: 50px;
     background-color: black;
   
-    margin: 10px;
+    margin: 5px;
   
 
 }
@@ -367,14 +367,14 @@ footer{
     padding: 30px;
     background-color: black;
   
-    margin: 10px;
+    margin: 5px;
 }
 
 .project {
     padding: 30px;
     background-color: black;
 
-    margin: 10px;
+    margin: 5px;
 }
 /* ===== PROJECT CARDS ===== */
 
@@ -520,7 +520,7 @@ footer{
 background-color: black;
 color: white;
 padding: 40px;
-margin: 10px;
+margin: 5px;
 gap: 20px;
 display: flex;
 flex-direction: column;
@@ -640,12 +640,10 @@ flex-direction: column;
 .go  {
     text-decoration: none;
     color: white;
-    padding: 8px 18px;
+    padding: 7px 15px;
     border-radius: 10px;
     background-color: red;
-
- 
-
+    font-size: 10px;
 }
 
 /* SPLIDE FIX */
@@ -681,7 +679,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 10px;
+  margin: 5px;
 
   color: white;
   overflow: hidden; /* empêche le texte de dépasser */
@@ -852,7 +850,7 @@ flex-direction: column;
 .contact {
   
   padding: 30px;
-  margin: 10px;
+  margin: 5px;
 
   background-color: black;
 
@@ -977,7 +975,8 @@ nav {
 }
 
 .top1 h1 {
-  font-size: 38px;
+  font-size: 47px;
+  letter-spacing: 2px;
  
 }
 
@@ -1046,7 +1045,7 @@ margin-bottom: 20px;
 header,
 .project,
 .g {
-    margin: 10px;
+    margin: 5px;
 }
 }
 
@@ -1064,7 +1063,7 @@ header,
 header,
 .project,
 .g {
-    margin: 10px;
+    margin: 5px;
 }
 nav ul {
     list-style: none;
@@ -1098,7 +1097,8 @@ nav ul {
 }
 
 .top1 h1 {
-  font-size: 38px;
+  font-size: 47px;
+  letter-spacing: 2px;
  
 }
 
@@ -1201,7 +1201,6 @@ margin-bottom: 20px;
 .top {
   display: flex;
 justify-content: space-between;
-
   align-items: center;
   padding: 20px 30px;
   position: relative; /* pour être au-dessus de l'overlay */
@@ -1242,18 +1241,14 @@ nav {
 }
 
 /* titre */
-.se h4 {
-    text-transform: uppercase;
-  
-    flex: 1;
-}
+
 
 /* texte */
 .se p {
     margin: 0;
     flex: 2;
     text-align: left;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 /* flèche */
@@ -1265,11 +1260,21 @@ nav {
 background-color: black;
 color: white;
 padding: 20px;
-margin: 10px;
+margin: 5px;
 gap: 20px;
 display: flex;
 flex-direction: column;
 
+}
+
+.services .se h4 {
+        font-size: 13px; /* diminue la taille */
+        line-height: 1.2;
+    }
+
+    .services .se:hover {
+    border-left: 4px solid burlywood;
+    transform: translateX(6px);
 }
 
 }
@@ -1289,9 +1294,20 @@ flex-direction: column;
 }
 
 
-.services h4 {
-    text-transform: uppercase;
-    font-size: 20px;
+
+
+@media screen and (max-width: 430px) {
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
 }
 
 
@@ -1306,7 +1322,7 @@ flex-direction: column;
       
         <div class="top">
             <div class="logo">
-                <img src="Photoroom_20260327_164214 copie.PNG" alt="Logo">
+              <a href="index.html"> <img src="Photoroom_20260327_164214 copie.PNG" alt="Logo"> </a> 
             </div>
             
             <nav>
@@ -1341,7 +1357,7 @@ flex-direction: column;
     </div>
       
         <div class="top1">
-          <h1>KRATOS ARCHITECTURE</h1>
+          <h1>KRATOS <span>ARCHITECTURE</span> </h1>
           <div class="button">
             <a href="#services" class="button1">START</a>
             <a href="#contact" class="button2">CONTACT</a>
@@ -1366,7 +1382,7 @@ flex-direction: column;
                          <h2 style="color: white; margin-top: 4px; font-size: 35px;">KRATOS ARCHITECTURE</h2>
                         </div>
                         <p>
-                       Architecte d'espaces minimalistes et durables, notre cabinet s'engage pour une architecture de l'essentiel. Guidés par la rigueur technique et la créativité, nous livrons des projets fonctionnels et responsables —pour une optimisation des performances énergétiques.
+                       Architecte d'espaces minimalistes et durables, notre cabinet s'engage pour une architecture de l'essentiel. Guidés par la rigueur technique et la créativité, nous livrons des projets fonctionnels et responsables — pour une optimisation des performances énergétiques.
                         </p>
                     </div>
         
