@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
@@ -17,8 +18,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
+
 <style>
-    body h1,
+
+body h1,
 body h2,
 body h3,
 body h4 {
@@ -197,7 +204,8 @@ gap: 10px;
 display: flex;
 gap: 30px;
 
-margin: 20px;
+justify-content: center;
+align-items: center;
 margin-top: 40px;
 }
 
@@ -221,15 +229,30 @@ cursor: pointer;
 text-decoration: none;
 
 color: white;
-padding: 13px 20px;
+padding: 10px 18px;
 background-color: red;
-border-radius: 10px;
+border-radius: 7px;
 
 }
-.input-group input {
-border-radius: 6px;
-padding: 6px;
-border: 1px solid white;
+.contact-form input,
+.contact-form textarea {
+    background: #0A0A0A;
+    border: 1px solid #1f1f1f;
+    padding: 12px;
+    color: white;
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-form label {
+    color: white;
+}
+
+/* focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid burlywood;
 }
 
 .contact-form button {
@@ -478,7 +501,7 @@ gap: 40px;
 text-decoration: none;
 font-size: 12px;
 color: white;
-padding: 13px 20px;
+padding: 10px 17px;
 background-color: red;
 border-radius: 10px;
 
@@ -584,9 +607,9 @@ gap: 40px;
 text-decoration: none;
 font-size: 12px;
 color: white;
-padding: 13px 20px;
+padding: 10px 17px;
 background-color: red;
-border-radius: 10px;
+border-radius: 7px;
 
 }
 .button {
@@ -669,7 +692,7 @@ gap: 40px;
 text-decoration: none;
 font-size: 12px;
 color: white;
-padding: 13px 20px;
+padding: 10px 17px;
 background-color: red;
 border-radius: 10px;
 
@@ -754,7 +777,7 @@ gap: 40px;
 text-decoration: none;
 font-size: 12px;
 color: white;
-padding: 13px 20px;
+padding: 10px 17px;
 background-color: red;
 border-radius: 10px;
 
@@ -778,6 +801,16 @@ margin: 5px;
 
 /* ===== FIX LOGO + BURGER (MAX 430px) ===== */
 @media screen and (max-width: 430px) {
+
+.top {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+}
+@media screen and (max-width: 600px) {
 
 .top {
 display: flex;
