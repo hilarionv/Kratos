@@ -166,22 +166,14 @@ text-decoration:none;
 color:burlywood;
 }
 
-.image img {
-height: 500px;
-width: 90%;
-border-radius: 30px;
 
-}
 .texte {
 display: flex;
 flex-direction: column;
 max-width: 700px;
 color: white;
 }
-.image  {
-flex: 1;
-width: 100%;
-}
+
 
 .se {
 display: flex;
@@ -347,12 +339,7 @@ padding: 20px 40px;
 position: relative; /* pour être au-dessus de l'overlay */
 z-index: 2;
 }
-.image img {
-height: 500px;
-width: 100%;
-border-radius: 30px;
 
-}
 .texte {
 display: flex;
 flex-direction: column;
@@ -389,6 +376,21 @@ align-items: center;
 justify-content: center;
 margin-top: 40px;
 }
+}
+
+
+@media screen and (max-width: 600px) {
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
 }
 
 @media screen and (max-width: 430px) {
@@ -473,22 +475,14 @@ display: none; /* cacher ton nav normal */
 .burger {
 display: flex; /* afficher le burger */
 }
-.image img {
-height: 500px;
-width: 90%;
-border-radius: 30px;
 
-}
 .texte {
 display: flex;
 flex-direction: column;
 max-width: 100%;
 color: white;
 }
-.image  {
 
-width: 100%;
-}
 
 .se {
 display: flex;
@@ -667,24 +661,14 @@ padding: 20px 40px;
 position: relative; /* pour être au-dessus de l'overlay */
 z-index: 2;
 }
-.image img {
-height: 500px;
-width: 100%;
-border-radius: 30px;
 
-}
 .texte {
 display: flex;
 flex-direction: column;
 max-width: 100%;
 color: white;
 }
-.image  {
 
-width: 100%;
-align-items: center;
-
-}
 
 .se {
 display: flex;
@@ -762,24 +746,14 @@ padding: 20px 40px;
 position: relative; /* pour être au-dessus de l'overlay */
 z-index: 2;
 }
-.image img {
-height: 400px;
-width: 100%;
-border-radius: 30px;
 
-}
 .texte {
 display: flex;
 flex-direction: column;
 max-width: 100%;
 color: white;
 }
-.image  {
 
-width: 100%;
-align-items: center;
-
-}
 
 .se {
 display: flex;
@@ -873,9 +847,7 @@ align-items: center;
     </div>
       <main>
         <div class="se">
-        <div class="image">
-
-        </div>
+      
         <div>
             <div class="texte">
             <h1>Maîtrise d’Œuvre & Suivi Technique</h1>
