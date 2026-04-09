@@ -24,6 +24,8 @@
 <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
 
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
 
 
     <style>
@@ -120,6 +122,9 @@ margin: 0;
     display: flex;
     flex-direction: column;
     gap: 6px;
+}
+[data-aos="fade-right"] {
+    transform: translateX(-80px);
 }
 
 .contact-form input,
@@ -1423,7 +1428,7 @@ flex-direction: column;
             <h1 style="font-size: 46px;">SERVICES</h1>
             <div class="number"> <span class="numberr">02</span> </div>
         
-            <div class="se">
+            <div class="se" data-aos="fade-right" data-aos-delay="100">
                 <div class="text">
                     <h4>Conception, Réhabilitation & Bioclimatique</h4>
                     <p>De l'esquisse au permis de construire, une architecture qui a du sens.</p>
@@ -1437,7 +1442,7 @@ flex-direction: column;
                 </div>
             </div>
         
-            <div class="se">
+            <div class="se" data-aos="fade-right" data-aos-delay="120">
                 <div class="text">
                     <h4>Maîtrise d’Œuvre & Suivi Technique</h4>
                     <p>La garantie d'une exécution rigoureuse, du terrassement à la livraison.</p>
@@ -1451,7 +1456,7 @@ flex-direction: column;
                 </div>
             </div>
         
-            <div class="se">
+            <div class="se" data-aos="fade-right" data-aos-delay="130">
                 <div class="text">
                     <h4>Optimisation des Espaces & Ergonomie</h4>
                     <p>La conception intérieure pensée par l’architecture.</p>
@@ -1465,7 +1470,7 @@ flex-direction: column;
                 </div>
             </div>
         
-            <div class="se">
+            <div class="se" data-aos="fade-right" data-aos-delay="140">
                 <div class="text">
                     <h4>Visualisation Architecturale Avancée</h4>
                     <p>Une immersion visuelle haute fidélité pour valider vos choix.</p>
@@ -1479,7 +1484,7 @@ flex-direction: column;
                 </div>
             </div>
         
-            <div class="se">
+            <div class="se" data-aos="fade-right" data-aos-delay="150">
                 <div class="text">
                     <h4>Conseils & Stratégie Immobilière</h4>
                     <p>L'accompagnement expert dès l'idée de projet.</p>
@@ -1645,6 +1650,17 @@ function toggleMenu() {
     }
 }
 
+    </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1500,
+      once: true,
+      offset: 80,
+
+    });
     </script>
         
 </body>
