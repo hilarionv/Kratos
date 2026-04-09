@@ -1418,7 +1418,7 @@ flex-direction: column;
                 </div>
         
             </div>
-  <div class="goo" style="gap:20px; display: flex;">  <a href="" class="go">CONTACT</a> 
+  <div class="goo" style="gap:20px; display: flex;">  <a href="#contact" class="go">CONTACT</a> 
 <a href="apropos.html" class="go">VOIR PLUS</a>
 </div> 
         </section>
@@ -1564,22 +1564,22 @@ flex-direction: column;
         
                     <div class="input-group">
                         <label>Nom</label>
-                        <input type="text" placeholder="Votre nom">
+                        <input type="text" placeholder="Votre nom" id="name">
                     </div>
         
                     <div class="input-group">
                         <label>Prénom</label>
-                        <input type="text" placeholder="Votre prénom">
+                        <input type="text" placeholder="Votre prénom" id="prenom">
                     </div>
         
                     <div class="input-group">
                         <label>Email</label>
-                        <input type="email" placeholder="Votre email">
+                        <input type="email" placeholder="Votre email" id="email">
                     </div>
         
                     <div class="input-group">
                         <label>Message</label>
-                        <textarea rows="5" placeholder="Votre message"></textarea>
+                        <textarea rows="5" placeholder="Votre message" id="message"></textarea>
                     </div>
         
                     <button type="submit">Envoyer</button>
@@ -1591,27 +1591,29 @@ flex-direction: column;
     </main>
 
     <footer>
-<div class="foot">
-    <h3>KRATOS ARCHITECTURE</h3>
- 
-    <div class="RSS">
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
-        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-    </div>
-    <div class="footer-links">
-    <a href="#">HOME</a>
-    <a href="#">PROJECTS</a>
-    <a href="#">SERVICES</a>
-    <a href="#">CONTACT</a>
-    </div>
-</div>
+        <div class="foot">
+            <h3>KRATOS ARCHITECTURE</h3>
+         
+            <div class="RSS">
+                <a href="https://www.instagram.com/kratos_architecture?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-links">
+            <a href="index.html">HOME</a>
+            <a href="index.html#project">PROJECTS</a>
+            <a href="index.html#service">SERVICES</a>
+            <a href="index.html#contact">CONTACT</a>
+            </div>
+        </div>
     
     <p style="margin-top:20px;color:grey;">
     © 2026 Kratos Architecture — Tous droits réservés — By Hilarion V
     </p>
     </footer>
+   
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
