@@ -23,6 +23,8 @@
 <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
 
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
 <style>
     /* ================= GLOBAL ================= */
 
@@ -124,6 +126,8 @@ main {
     
  
 }
+
+
 
 h1 {
     font-size: 43px;
@@ -314,6 +318,11 @@ footer {
     color: burlywood;
 }
 
+[data-aos],
+[data-aos].aos-animate {
+    transition-timing-function: ease-in-out !important;
+}
+
 @media screen and (max-width: 600px) {
 
 /* NAVIGATION */
@@ -334,7 +343,9 @@ nav {
 
 
 
-
+[data-aos] {
+    transition-timing-function: ease-in-out !important;
+}
 
 
 .foot {
@@ -520,7 +531,7 @@ h1 {
       </header>
       <main>
         <h1>KRATOS ARCHITECTURE</h1>
-        <div class="kratos">
+        <div class="kratos" data-aos="fade-up">
             <div class="identité">
                 <h4>Identité</h4>
                 <p>Architecte d'espaces minimalistes et durables, notre cabinet s'engage pour une architecture de l'essentiel. Guidés par la rigueur technique et la créativité, nous livrons des projets fonctionnels et responsables —pour une optimisation des performances énergétiques.</p>
@@ -533,21 +544,21 @@ h1 {
             </div>
         </div>
 
-<div class="apropos">
+<div class="apropos" data-aos="fade-up">
     <h3>A PROPOS</h3>
     <h4>LA FORCE DE LA SIMPLICITÉ</h4>
     <p>Kratos Architecture repose sur la conviction que l'espace bâti doit transcender sa fonction primaire pour devenir une expérience sensorielle. Notre approche privilégie la noblesse des matériaux bruts et la précision du détail constructif.
 
         Chaque réalisation est le fruit d’une symbiose entre le contexte paysager et les aspirations de nos clients. Nous sculptons le vide et la lumière pour produire des volumes sobres, où le silence architectural laisse place à la sérénité de l'habité.
 </p>
-<a href="">NOUS CONTACTER</a>
+<a href="index.html#contact">NOUS CONTACTER</a>
 </div>
 
         <h3>Ce en quoi nous croyons</h3>
 
 
         <h3>NOS VALEURS</h3>
-        <div class="valeurs">
+        <div class="valeurs" data-aos="fade-up">
             <div class="val">
                 <h4>Créativité</h4>
                 <p>Chaque projet est une réponse unique, jamais une formule.</p>
@@ -566,7 +577,7 @@ h1 {
             </div>
         </div>
 
-        <div class="services">
+        <div class="services" data-aos="fade-up">
             <h3>NOS SERVICES</h3>
             <div class="se">
                 <h4>Conception, Réhabilitation & Bioclimatique</h4>
@@ -624,5 +635,16 @@ h1 {
                 }
                 
                     </script>
-                        
+           
+           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+           <script>
+               AOS.init({
+                   duration: 1400,
+                 once: true,
+                 offset: 80,
+                 easing: "ease-out-cubic"
+               });
+               </script>
+               
 </body>
