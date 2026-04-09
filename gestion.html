@@ -45,14 +45,35 @@ font-family: "Barlow Condensed", sans-serif;
 }
 header {
 /* obligatoire pour overlay */
-
-
+position: relative; /* obligatoire pour overlay */
+  min-height: 600px;
+  background-image: url(Photoroom_20260409_171132.PNG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 background-color: black;
 margin: 5px;
 
 color: white;
 overflow: hidden; /* empêche le texte de dépasser */
 
+}
+
+.overlay {
+    position: absolute;
+    min-height: 600px;
+
+width: 100%;
+    background-color: rgba(0,0,0,0.5); /* noir semi-transparent */
+
+    z-index: 1; /* derrière le texte */
+}
+header .overlay {
+  position: absolute;
+  inset: 0; /* top:0; left:0; right:0; bottom:0 */
+  background-color: rgba(0,0,0,0.7);
+
+  z-index: 1; /* derrière le texte */
 }
 
 .top {
@@ -303,15 +324,27 @@ background-color: white;
 .top3 {
 display: flex;
 text-align: center;
+flex-direction: column;
 margin: 5px;
 align-items: center;
 justify-content: center;
 color: white;
-background-color: black;
-
+position: relative;
+z-index: 2;
 min-height: 200px;
 font-size: 25px;
 margin-bottom: 0;
+
+}
+
+.top3 h1 {
+    font-size: 70px;
+    margin-top: 100px;
+}
+
+.top3 p {
+    font-size: 15px;
+    color: burlywood;
 }
 
 @media screen and (max-width: 768px) {
@@ -421,7 +454,7 @@ margin: 5px;
 align-items: center;
 justify-content: center;
 color: white;
-background-color: black;
+
 
 min-height: 200px;
 font-size: 20px;
@@ -553,19 +586,7 @@ text-align: center;
 font-size: 25px;
 
 }
-.top3 {
-display: flex;
-text-align: center;
-margin: 5px;
-align-items: center;
-justify-content: center;
-color: white;
-background-color: black;
 
-min-height: 200px;
-font-size: 25px;
-margin-bottom: 0;
-}
 
 .foot {
 display: flex;
@@ -871,11 +892,11 @@ align-items: center;
             <a href="index.html#contact" onclick="toggleMenu()">CONTACT</a>
         </div>
       
- 
+        <div class="top3">
+            <h1>SERVICES</h1>
+
+        </div>
       </header>
-      <div class="top3">
-        <h1>SERVICES</h1>
-    </div>
       <main>
 
      
@@ -883,7 +904,7 @@ align-items: center;
    
         <div>
             <div class="texte">
-            <h1>Conseils & Stratégie Immobilière</h1>
+            <h1 style="color: burlywood;">Conseils & Stratégie Immobilière</h1>
             <p>Qu'il s'agisse d'une réhabilitation lourde, d'une extension ou d'un achat immobilier, nous réalisons des audits de faisabilité et des diagnostics techniques. Nous vous aidons à identifier le potentiel caché d'un bâtiment ou d'un terrain avant de lancer vos investissements.  <br>
 
                 Livrables : Rapports de faisabilité, esquisses de principe et estimations sommaires</p>
